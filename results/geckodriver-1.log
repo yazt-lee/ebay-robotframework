@@ -1,0 +1,14 @@
+1740764368949	geckodriver	INFO	Listening on 127.0.0.1:52822
+1740764371988	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52823" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Yayas\\AppData\\Local\\Temp\\rust_mozprofilemizwxk"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1740764372241	Marionette	INFO	Marionette enabled
+1740764372340	Marionette	INFO	Listening on port 52830
+WebDriver BiDi listening on ws://127.0.0.1:52823
+Read port: 52830
+1740764372527	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52823/devtools/browser/476ce4f0-8266-40a5-9b7f-a570d52621cb
+JavaScript error: https://ir.ebaystatic.com/cr/v/c01/ac-022425204313.dweb-old.min.js, line 2: TypeError: e is undefined
+1740764378101	Marionette	INFO	Stopped listening on port 52830
+Dynamically enable window occlusion 1

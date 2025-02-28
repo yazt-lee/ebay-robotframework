@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-01T00:39:28.552241" rpa="false" schemaversion="5">
+<suite id="s1" name="BasicSearch" source="C:\Users\Yayas\Documents\project-python\ebay\tests\BasicSearch.robot">
+<test id="s1-t1" name="Verify basic search functionality for eBay" line="12">
+<kw name="Start Testcase" owner="commonFunctionality" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-01T00:39:28.829101" level="INFO">Opening browser 'firefox' to base url 'https://www.ebay.com'.</msg>
+<arg>https://www.ebay.com</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-01T00:39:28.828951" elapsed="6.670493"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-03-01T00:39:35.499651" elapsed="0.274114"/>
+</kw>
+<status status="PASS" start="2025-03-01T00:39:28.828350" elapsed="6.945537"/>
+</kw>
+<kw name="Input Search Text" owner="headerPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-01T00:39:35.774929" level="INFO">Typing text 'mobile' into text field 'xpath://*[@id='gh-ac']'.</msg>
+<arg>xpath://*[@id='gh-ac']</arg>
+<arg>${search_text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-01T00:39:35.774602" elapsed="0.070468"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-03-01T00:39:35.845456" level="INFO">Clicking button 'id=gh-search-btn'.</msg>
+<arg>id=gh-search-btn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-01T00:39:35.845260" elapsed="2.121971"/>
+</kw>
+<status status="PASS" start="2025-03-01T00:39:35.774326" elapsed="2.193138"/>
+</kw>
+<kw name="Verify Search Results" owner="headerPage">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-03-01T00:39:38.099273" level="INFO">Current page contains text 'results for mobile'.</msg>
+<arg>results for ${search_text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-03-01T00:39:37.968094" elapsed="0.131282"/>
+</kw>
+<status status="PASS" start="2025-03-01T00:39:37.967845" elapsed="0.131641"/>
+</kw>
+<kw name="Finish Testcase" owner="commonFunctionality" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-03-01T00:39:38.100254" elapsed="2.948118"/>
+</kw>
+<status status="PASS" start="2025-03-01T00:39:38.099986" elapsed="2.948485"/>
+</kw>
+<doc>This test case verifies the basic search</doc>
+<tag>Functional</tag>
+<status status="PASS" start="2025-03-01T00:39:28.827620" elapsed="12.220983"/>
+</test>
+<doc>Simple example using SeleniumLibrary.</doc>
+<status status="PASS" start="2025-03-01T00:39:28.553553" elapsed="12.495836"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Functional</stat>
+</tag>
+<suite>
+<stat name="BasicSearch" id="s1" pass="1" fail="0" skip="0">BasicSearch</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

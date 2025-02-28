@@ -1,3 +1,4 @@
+# for running robot -d results tests/
 *** Settings ***
 Documentation     Simple example using SeleniumLibrary.
 Library           SeleniumLibrary

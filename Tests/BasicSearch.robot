@@ -1,8 +1,8 @@
 *** Settings ***
 Documentation     Simple example using SeleniumLibrary.
 Library           SeleniumLibrary
-Resource          ./Resources/commonFunctionality.robot
-Resource          ./Resources/headerPage.robot
+Resource          ../Resources/commonFunctionality.robot
+Resource          ../Resources/headerPage.robot
 
 Test Setup        commonFunctionality.Start Testcase
 Test Teardown     commonFunctionality.Finish Testcase

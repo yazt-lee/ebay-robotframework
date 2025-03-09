@@ -53,4 +53,3 @@ webdriver-manager==2.3.0
 websocket-client==1.8.0
 wsproto==1.2.0
 selenium==4.15.0
-selenium-library==0.0.3

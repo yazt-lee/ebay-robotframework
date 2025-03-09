@@ -53,7 +53,6 @@ sympy==1.13.1
 trio==0.29.0
 trio-websocket==0.12.2
 typing_extensions==4.12.2
-urllib3==2.2.0
 webdriver-manager==2.3.0
 websocket-client==1.8.0
 wsproto==1.2.0
